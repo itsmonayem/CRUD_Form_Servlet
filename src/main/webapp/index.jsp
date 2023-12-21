@@ -39,8 +39,8 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">name</th>
-                    <th scope="col">email</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
                     <th scope="col">Designation</th>
                     <th scope="col">Update</th>
                     <th scope="col">Delete</th>

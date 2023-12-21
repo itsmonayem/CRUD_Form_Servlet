@@ -40,8 +40,8 @@
                 <label for="InputDesignation" class="form-label">Designation</label>
                 <input type="text" value="<%=designation%>" class="form-control" id="InputDesignation" name="designation">
             </div>
-            <button formaction="updateInfo" type="submit" class="btn btn-primary">Reset</button>
-            <button formaction="register" type="submit" class="btn btn-primary" value="no" name="addUser">Cancel</button>
+            <button formaction="updateInfo" type="submit" class="btn btn-primary">Update</button>
+            <button formaction="register" type="submit" class="btn btn-danger" value="no" name="addUser">Cancel</button>
         </form>
     </div>
 
