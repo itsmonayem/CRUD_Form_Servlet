@@ -14,7 +14,6 @@
 </head>
 <body>
     <div class="row m-5">
-        <%%>
         <div class="input-form col-md-5 ">
             <form action="register" method="post">
                 <div class="mb-3">
@@ -30,7 +29,7 @@
                     <label for="InputDesignation" class="form-label">Designation</label>
                     <input type="text" class="form-control" id="InputDesignation" name="designation">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" value="add" name="addUser">Submit</button>
             </form>
         </div>
 

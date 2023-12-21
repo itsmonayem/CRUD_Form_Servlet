@@ -9,18 +9,22 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.Objects;
 
 public class Register extends HttpServlet {
     Connection connection = DBConnector.getConnection();
 
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String addUser = req.getParameter("addUser");
+        if (addUser == null) addUser = "no";
+        System.out.println(addUser);
         String name = req.getParameter("name");
         String email = req.getParameter("email");
         String designation = req.getParameter("designation");
 
 
         try {
-            if(name != null && email != null) createUser(name, email, designation);
+            if(addUser.equals("add")) createUser(name, email, designation);
             showUser(req, resp);
         } catch (SQLException e) {
             throw new RuntimeException(e);
